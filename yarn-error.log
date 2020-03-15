@@ -1,0 +1,39 @@
+Arguments: 
+  /usr/local/Cellar/node/13.7.0/bin/node /usr/local/Cellar/yarn/1.21.1/libexec/bin/yarn.js init
+
+PATH: 
+  /Users/kyle/Desktop/DreamsVisualized/CSProjects/swish/systems/kubernetes-the-hard-way/google-cloud-sdk/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/kyle/go/bin:JAVA_HOME/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  13.7.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kyle/Desktop/DreamsVisualized/CSProjects/containers/docker/test-playground/init-test/package.json: Unexpected token } in JSON at position 226
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:310:30)
+      at /usr/local/Cellar/yarn/1.21.1/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "Docker Test",
+    "version": "1.0",
+    "main": "index.js",
+    "scripts": {
+      "dev": "nodemon index.js babel-node NODE_ENVIRONMENT=dev",
+      "production": "nodemon index.js babel-node NODE_ENVIRONMENT=production",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
